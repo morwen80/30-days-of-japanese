@@ -15,6 +15,8 @@ html, body {
   font-size: 1.1rem;
 }
 
+
+
 .wrapper {
   display: grid;
   grid-gap: 10px;
@@ -77,6 +79,17 @@ ol li {
   line-height: 150%;
 }
 
+article a {
+  background-color: var(--light);
+  color: var(--darker);
+  padding: .2rem;
+}
+article a:hover {
+  background-color: var(--dark);
+  color: var(--black);
+  transition: color, background-color 1s;
+}
+
 /* SIDE COLUMN */
 aside {
   grid-area: sidebar;
@@ -125,6 +138,11 @@ section h2 {
 aside a {
   color: var(--darker);
   font-weight: 700;
+}
+
+/* ==== BOOK LIST */
+.book {
+  height: 100px;
 }
 
 /* FOOTER  */
