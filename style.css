@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Sacramento&display=swap');
+:root {
+  --light: #FFC2C3;
+  --dark: #FE7773;
+  --darker: #E81E25;
+  --black: #0E0301;
+}
+
+html, body {
+  background-color: var(--light);
+  height: vh100;
+  margin: 1.5rem 1rem .5rem 1rem;
+  color: var(--black);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 37.5% 37.5% 25%;
+  grid-template-areas:
+  "header  header  header"
+  "content content sidebar"
+  "footer  footer  footer";
+  grid-template-rows: auto 1fr minmax(100px, auto);
+  width: 90%;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+header {
+  grid-area: header;
+  font-size: 4rem;
+  text-align: left;
+  padding-bottom: 1rem;
+  color: var(--darker);
+  font-family: 'Sacramento', cursive;
+  font-weight: 700;
+}
+
+main {
+  grid-area: content;
+  position: relative;
+}
+
+/* POST */
+article {
+  padding: 3rem 2rem 2rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+article h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: .8rem;
+  color: var(--darker);
+  font-family: 'Sacramento', cursive;
+}
+article h3 {
+  text-align: right;
+  font-size: 1.2rem;
+  padding-bottom: .8rem;
+  border-bottom: 3px solid var(--black);
+  font-style: italic;
+}
+article li {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+ol li {
+  list-style-type: square;
+  margin-left: 1.5rem;
+}
+.postBody {
+  padding-top: 1rem;
+
+  line-height: 150%;
+}
+
+/* SIDE COLUMN */
+aside {
+  grid-area: sidebar;
+  margin-bottom: auto;
+  padding: 2rem .6rem 0 .6rem;
+  font-size: 1rem;
+}
+
+section {
+  padding: 1rem 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+section h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-bottom: .5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#me {
+  border-radius: 50%;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: .7rem;
+}
+#media .fab:hover {
+  color: var(--darker);
+  -webkit-transition: color .7s; /* Safari prior 6.1 */
+  transition: color .7s;
+}
+
+.fab {
+  padding-top: .6rem;
+  color: var(--light);
+  font-size: 1.5rem;
+  margin-right: .5rem;
+}
+
+.fa-ul {
+  text-align: left;
+}
+
+aside a {
+  color: var(--darker);
+  font-weight: 700;
+}
+
+/* FOOTER  */
+footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+.box {
+  background-color: var(--dark);
+  color: var(--black);
+  border-radius: 5px;
+  line-height: 150%;
+}
