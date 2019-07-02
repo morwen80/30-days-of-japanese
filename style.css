@@ -50,6 +50,10 @@ main {
 article {
   padding: 3rem 2rem 2rem 2rem;
   margin-bottom: 1.5rem;
+  display: none;
+}
+.visible {
+  display: block;
 }
 
 article h2 {

@@ -10,4 +10,11 @@ for (let i = 0; i < pages.length; i++) {
   });
 }
 
-const last5 = articles.slice(0,6)
+const last5 = articles.slice(0,5)
+const showLast5 = () => {
+  last5.forEach( article => {
+    article.classList.add('visible')
+  })
+}
+
+showLast5();
