@@ -90,6 +90,22 @@ article a:hover {
   transition: color, background-color 1s;
 }
 
+/* ==== PAGINATION */
+.pagination a {
+  color: var(--black);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: var(--darker);
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
 /* SIDE COLUMN */
 aside {
   grid-area: sidebar;
@@ -143,6 +159,10 @@ aside a {
 /* ==== BOOK LIST */
 .book {
   height: 100px;
+}
+.book:hover {
+  transform: scale(2.7);
+  transition: transform .5s;
 }
 
 /* FOOTER  */
